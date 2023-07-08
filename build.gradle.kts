@@ -40,6 +40,5 @@ tasks {
 
 
 springBoot {
-	mainClass.set("board.src.main.java.com..studysec.boardsec
-.BoardsecApplicationKt")  
+	mainClass.set("com.studysec.boardsec.BoardsecApplicationKt")  
 }
