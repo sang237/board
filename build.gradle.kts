@@ -40,5 +40,5 @@ tasks {
 
 
 springBoot {
-    mainClassName = 'cpm.baeldung.DemoApplication'
+	mainClass.set("com.studysec.boardsec.BoardsecApplicationKt")
 }
