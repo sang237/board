@@ -32,4 +32,9 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
+tasks {
+	named<BootJar>("bootJar") {
+		var mainClassName = "com.studysec.boardsec.boardsecApplication"
+	}
+}
 
