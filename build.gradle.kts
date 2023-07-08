@@ -32,9 +32,9 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-tasks.named<Jar>("jar") {
-	enabled = true
-	manifest {
-		attributes["Main-Class"] = "com.studysec.boardsec.BoardsecApplication" 
-	}
+tasks {
+    withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+        duplicatesStrategy = org.gradle.api.file.DuplicatesStrategy.INCLUDE // 중복 처리 전략을 INCLUDE로 설정
+    }
 }
+
