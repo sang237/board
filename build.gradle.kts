@@ -32,9 +32,9 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-tasks {
-    withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
-        enabled = false
-    }
+tasks.named<Jar>("jar") {
+	enabled = true
+	manifest {
+		attributes["Main-Class"] = "com.studysec.boardsec.BoardsecApplication" 
+	}
 }
-
