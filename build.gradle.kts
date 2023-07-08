@@ -39,6 +39,6 @@ tasks {
 }
 
 
-bootJar {
+springBoot {
 	mainClass.set("com.studysec.boardsec.BoardsecApplicationKt")
 }
