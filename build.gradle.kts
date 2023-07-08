@@ -33,8 +33,8 @@ tasks.withType<Test> {
 }
 
 tasks {
-	named<BootJar>("bootJar") {
-		var mainClassName = "com.studysec.boardsec.boardsecApplication"
-	}
+    withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+        enabled = true
+    }
 }
 
